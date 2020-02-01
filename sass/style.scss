@@ -2,11 +2,13 @@ $cd-btn: #FFA500;
 $cd-txt: #15DEA5;
 $cd-btn-start: rgba(1, 28, 55, 0);
 $cd-btn-end: rgb(255,165,0);
+$cd-bkg: #fff8ef;
 
 body{
   margin: 0px auto;
   font-family: helvetica;
   width: 100%;
+  background-color: $cd-bkg;
 }
 
 /*----------------------------------------------------- Icons --------------------------------------------*/
@@ -100,8 +102,11 @@ hr{
   float: left;
   width: 250px;
   height: 300px;
-  margin-right: 40px;
+  margin-right: 35px;
+  margin-left: 15px;
   margin-top: 22px;
+  border-radius: 10rem;
+  border: 8px solid $cd-btn;
 }
 
 .article{
@@ -114,6 +119,19 @@ hr{
 #gallery{
   width: 350px;
   height: 300px;
+  margin-right: 35px;
+  margin-left: 15px;
+  margin-top: 22px;
+}
+
+section.Portfolio{
+  float: left;
+  display: grid;
+  grid-template-columns: 220px 2px;
+  grid-gap: 20px;
+  margin-right: 35px;
+  margin-left: 15px;
+  margin-top: 22px;
 }
 
 /*-------------------------------------------------------------------------Navigation bar ----------------*/
@@ -122,12 +140,14 @@ hr{
     width: 100%;
     height: 22px;
     font-size: 30px;
-
-}
+    
+    }
 
 .nav_bar-nav{
   margin-right: 10px 80px 10px;
   width: 100%;
+    background-color: #2b1a13;
+    padding: 20px;
 }
 
 .nav__link {
@@ -136,17 +156,17 @@ hr{
 
 .nav__link a {
     text-decoration: none;
-    color: #001534;
+    color: #ff9800;
     width: 100%;
-    margin-right: 20px;
-}
-
-.nav__link--active {
-    color: #FECA07;
+    margin-right: 30px;
 }
 
 .nav__link a:hover {
-    color: #008f11;
+    color: #efcb5f;
+}
+
+.nav__link a:active {
+  color: #efcb5f
 }
 /*------------------------------------------ Contact me form -------------------------------------------------------------*/
 input[type=text], textarea {
@@ -226,12 +246,11 @@ transform: scale(0.1);
   transform: rotate(180deg);
   }
 }
-}
 
 
 #me{
-margin-right: 40px;
-margin-top: 22px;
+margin-left: 45px;
+margin-top: 30px;
 float: left;
 border: 4px solid $cd-btn;
 border-radius: 10rem;
@@ -239,9 +258,17 @@ cursor: pointer;
 font-size: 3rem;
 padding: 1.85rem 3rem;
 &:hover {
-transform: scale(1.1);
 background-color: $cd-btn-end;
-transform: scale(2);
-transition: transform 330ms ease-in-out;
+transform: scale(1.2);
+transition: transform 220ms ease-in-out;
 }
+}
+}
+// ---------------------------------------------------- footer --------------------------------
+.footer-social{
+    width: 100%;
+    background-color: #2b1a13;
+    padding: 20px;
+    margin-right: 20px;
+    color: orange;
 }
